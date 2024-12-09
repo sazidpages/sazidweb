@@ -1,0 +1,318 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Layout</title>
+</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+div,header,nav,sitemap,copyright,aside,article
+{
+//border:1px black solid ;
+box-sizing: border-box;
+}
+
+
+html
+{
+scroll-behavior:smooth;
+}
+
+body
+{
+text-align:center;
+}
+header
+{
+margin:auto;
+width:95%;
+height:500px;
+margin-bottom:10px;
+//margin:0px 0px 0px 0px;
+
+}
+
+header img
+{
+width:100%;
+height:500px;
+}
+
+
+nav
+{
+margin:auto;
+width:70%;
+height:40px;
+}
+
+nav ol li
+{
+list-style:none;
+display:inline;
+}
+
+
+
+
+#main
+{
+display:flex;
+//flex-direction:column;
+//flex-wrap:wrap;
+// justify-content: center;
+//justify-content: flex-start;
+//justify-content: flex-end;
+justify-content: space-around;
+//align-items: center;
+// align-items: flex-start;
+// align-items: flex-end;
+//height:500px;
+//align-items: stretch;
+}
+
+
+#left
+{
+width:10%;
+
+}
+#left img
+{
+width:100%;
+}
+
+
+article
+{
+width:78%;
+padding:70px;
+text-align:justify;
+
+}
+
+aside
+{
+width:10%;
+}
+
+aside img
+{
+width:100%;
+box-shadow:5px 5px 5px gray;
+margin:2px;
+}
+
+footer
+{
+width:95%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+justify-content: space-around;
+clear:both;
+}
+
+#copyright{
+width:100%;
+height:100px;
+margin:3%;
+
+
+}
+#sitemap
+{
+
+height:100px;
+width:100%;
+margin:3%;
+
+}
+
+#socialmedia
+{
+width:20%;
+height:100px;
+width:100%;
+margin:3%;
+
+}
+
+// implementing RWD
+img{max-width:50%;}
+
+
+
+/*  Extra small devices (phones, 600px and down)  */
+
+@media only screen and (max-width: 600px)
+ {
+   // body{ background : green; }
+
+    header{height:200px; display:none; }
+    header img{height:100%;  }
+
+    aside{display:none}
+ #left{display:none}
+ nav
+{
+// background:yellow;
+height:400px;
+}
+
+nav ol li
+{
+list-style:none;
+//background:red;
+display:block;;
+margin-left:-40px;
+padding:20px;
+}
+   
+nav ol li:hover
+{
+background:lime;
+}
+        
+article{width:100%}
+
+
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) 
+{
+
+  //  body{background:yellow; }
+   header{height:300px; display:block }
+    header img{height:100%;  }
+ nav
+{
+background:yellow;
+width:100%;
+text-align:left;
+margin-left:-40px;
+}
+ nav ol li
+{
+//background:red;
+padding:2px;
+margin-left:-10px;
+
+
+}
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px)
+ {
+	//    body{background:cyan; }
+header{height:400px; display:block }
+    header img{height:100%;  }
+footer
+{
+flex-direction:row;
+}
+
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+ {
+  //  body{background:orange; }
+header{height:500px; display:block }
+    header img{height:100%;  }
+nav
+{
+text-align:center;
+}
+
+
+}
+
+
+
+
+
+
+</style>
+
+<body>
+<header>
+<img src="images/p1.jpg">
+
+</header>
+
+<nav>
+<ol>
+
+<li><a href="layout.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="photo.html">Photo</a></li>
+
+<li><a href="https://www.behance.net/sazidmalik">My Graphic Work</a></li>
+
+<li><a href="https://www.google.com/">Google Search </a></li>
+</ol>
+</nav>
+
+
+
+
+
+
+<div id="main">
+<!--
+	<div id="left">
+      <img src="images/bird1.jpg">
+ <img src="images/bird1.jpg">
+<img src="images/bird1.jpg">
+	</div>
+-->
+      <article>
+<h3>Photo Gallery</h3>
+
+
+
+
+</article>
+<!--
+
+      <aside>
+<h3>Sale on Amazon</h3>
+  <img src="images/m1.jpg">
+ <img src="images/m2.jpg">
+ <img src="images/m3.jpg">
+
+ </aside>
+-->
+
+</div>
+
+<footer>
+
+<div id="copyright">copy</div>
+<div id="sitemap">sitemap</div>
+<div id="socialmedia">social Media</div>
+
+
+</footer>
+
+
+</body>
+</html>
