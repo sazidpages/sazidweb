@@ -1,0 +1,36 @@
+@keyframes run
+{
+10%{left:0%;}
+20%{left:-19%;}
+30%{left:-19%;}
+40%{left:-38%;}
+50%{left:-38%;}
+60%{left:-57%;}
+70%{left:-57%;}
+80%{left:-76%;}
+90%{left:-76%;}
+}
+
+body
+{
+//background:yellow;
+overflow:hidden;
+}
+
+#header
+{
+background:red;
+width:640%;
+height:650px;
+
+}
+
+.pic
+{
+
+width:19%;
+height:650px;
+margin-left:-4px;
+position:relative;
+left:0px;
+animation:run 10s infinite ease-in-out;
